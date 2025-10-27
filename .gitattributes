@@ -1,0 +1,46 @@
+# ================================
+# Normalize end-of-line handling
+# ================================
+* text=auto eol=lf
+
+# Force bash/sh scripts to always use LF
+*.sh text eol=lf
+
+# Force Windows batch files to use CRLF
+*.bat text eol=crlf
+
+# ================================
+# Treat specific files as binary
+# ================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.zip binary
+*.svg binary
+
+# ================================
+# Define default diff behaviors
+# ================================
+*.js diff=javascript
+*.ts diff=typescript
+*.json diff=json
+*.yml diff=yaml
+*.yaml diff=yaml
+*.md diff=markdown
+*.css diff=css
+*.html diff=html
+*.scss diff=css
+
+# ================================
+# Linguist overrides (GitHub stats)
+# ================================
+# Tell GitHub Linguist to classify documentation correctly
+docs/* linguist-documentation
+*.md linguist-documentation
+*.puml linguist-language=PlantUML

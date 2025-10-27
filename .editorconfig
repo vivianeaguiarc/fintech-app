@@ -1,0 +1,56 @@
+# EditorConfig ajuda a manter estilos de codificação consistentes
+# Mais informações: https://editorconfig.org
+
+# Define que este arquivo é o root
+root = true
+
+# =========================
+# Regras padrão do projeto
+# =========================
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+# =========================
+# Arquivos Markdown
+# =========================
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+# =========================
+# Arquivos JSON, YAML, e YML
+# =========================
+[*.{json,yml,yaml}]
+indent_size = 2
+
+# =========================
+# Arquivos TypeScript e JavaScript
+# =========================
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+quote_type = single
+insert_final_newline = true
+
+# =========================
+# Arquivos HTML, CSS, SCSS
+# =========================
+[*.{html,css,scss}]
+indent_size = 2
+
+# =========================
+# Makefiles
+# =========================
+[Makefile]
+indent_style = tab
+
+# =========================
+# Dockerfiles
+# =========================
+[Dockerfile]
+indent_style = space
+indent_size = 2
