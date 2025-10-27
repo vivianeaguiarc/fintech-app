@@ -1,0 +1,47 @@
+{
+  "name": "fintech",
+  "version": "1.0.0",
+  "description": "Plataforma FinTech multitenant para gestão financeira",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
+    "lint:fix": "eslint . --ext .ts,.js,.tsx,.jsx --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivianeaguiarc/fintech-app.git"
+  },
+  "author": "Viviane Aguiar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivianeaguiarc/fintech-app/issues"
+  },
+  "homepage": "https://github.com/vivianeaguiarc/fintech-app#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "git-commit-msg-linter": "^5.0.8",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.6.1",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.46.2"
+  }
+}
